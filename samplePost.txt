@@ -1,0 +1,22 @@
+{
+        time: int,
+        subreddit: string,
+        user:
+        {
+            username: string,
+            profilePic: string,
+            country: string,
+            totalUpvotes: int,
+            totalDownvotes: int, 
+            creationDate: int
+        },
+        upvotes: int,
+        downvotes: int,
+        content:
+        {
+            title: string,
+            body: string,
+            link: text
+        },
+        labels: [text]
+    }
