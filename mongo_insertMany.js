@@ -50,12 +50,12 @@ db.myCollection.insertMany([
         subreddit: "worldnews",
         user:
         {
-            username: "ImNotABot",
-            profilePic: "www.atechgiant.com/images/lol.jpg",
-            country: "UK",
-            totalUpvotes: 16720,
-            totalDownvotes: 235, 
-            creationDate: 151463726
+            username: "noobmaster69",
+            profilePic: "www.atechgiant.com/images/pic.jpg",
+            country: "ZAR",
+            totalUpvotes: 42069,
+            totalDownvotes: 123, 
+            creationDate: 1525846727
         },
         upvotes: 27892,
         downvotes: 453,
@@ -66,5 +66,28 @@ db.myCollection.insertMany([
             link: "https://www.bbc.co.uk/news/world-europe-48198646"
         },
         labels: ["worldnews", "EU", "climate change"]
-    }
+    },
+
+    {
+        time: 1538434017,
+        subreddit: "soccer",
+        user:
+        {
+            username: "RandomPerson",
+            profilePic: "www.atechgiant.com/images/pic2.jpg",
+            country: "UK",
+            totalUpvotes: 32420,
+            totalDownvotes: 1345, 
+            creationDate: 1524836923
+        },
+        upvotes: 19024,
+        downvotes: 123,
+        content:
+        {
+            title: "Liverpool [4]-0 Barcelona : Origi 79' (agg. 4-3)",
+            body: "What a goal",
+            link: "https://streamja.com/bbOB"
+        },
+        labels: ["soccer", "liverpool"]
+    },
 ]);
