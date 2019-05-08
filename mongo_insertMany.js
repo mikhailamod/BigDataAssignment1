@@ -30,8 +30,8 @@ db.myCollection.insertMany([
             username: "NotLionelMessi",
             profilePic: "www.atechgiant.com/images/messiSoloRun.jpg",
             country: "USA",
-            totalUpvotes: 6720,
-            totalDownvotes: 235, 
+            totalUpvotes: 26720,
+            totalDownvotes: 1335, 
             creationDate: 1524836923
         },
         upvotes: 18125,
@@ -43,5 +43,28 @@ db.myCollection.insertMany([
             link: null
         },
         labels: ["soccer", "messi"]
+    },
+
+    {
+        time: 1536335638,
+        subreddit: "worldnews",
+        user:
+        {
+            username: "ImNotABot",
+            profilePic: "www.atechgiant.com/images/lol.jpg",
+            country: "UK",
+            totalUpvotes: 16720,
+            totalDownvotes: 235, 
+            creationDate: 151463726
+        },
+        upvotes: 27892,
+        downvotes: 453,
+        content:
+        {
+            title: "Proposal to spend 25% of EU budget on climate change",
+            body: null,
+            link: "https://www.bbc.co.uk/news/world-europe-48198646"
+        },
+        labels: ["worldnews", "EU", "climate change"]
     }
 ]);
