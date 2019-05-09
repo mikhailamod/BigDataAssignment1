@@ -1,0 +1,56 @@
+//creation
+CREATE TABLE users(
+    ... username text,
+    ... profilePic text,
+    ... country text,
+    ... totalUpvotes int,
+    ... totalDownvotes int,
+    ... creationDate timestamp,
+    ... PRIMARY KEY (username));
+
+CREATE TABLE content(
+    ... content_id uuid PRIMARY KEY,
+    ... title text,
+    ... body text,
+    ... link text);
+
+CREATE TABLE posts(
+    ... post_id uuid PRIMARY KEY,
+    ... time timestamp,
+    ... subreddit text,
+    ... username text,
+    ... content_id uuid,
+    ... upvotes int,
+    ... downvotes int,
+    ... labels list<text >);
+
+
+//insert users
+insert into users
+    (username, profilepic, country, totalupvotes, totaldownvotes, creationdate)
+    VALUES('noobmaster69', 'www.atechgiant.com/images/pic.jpg', 'ZAR', 42069, 123, 1525846727)
+
+insert into users
+    (username, profilepic, country, totalupvotes, totaldownvotes, creationdate)
+    VALUES('NotLionelMessi', 'www.atechgiant.com/images/messiSoloRun.jpg', 'USA', 26014, 1234, 1524836923) ;
+
+insert into users
+    (username, profilepic, country, totalupvotes, totaldownvotes, creationdate)
+    VALUES('RandomPerson', 'www.atechgiant.com/images/random.jpg', 'UK', 32420, 1354, 1525846727) ;
+
+//insert content
+INSERT INTO content
+(content_id, title, body, link)
+VALUES (uuid(), 'Im in the new avengers movie!', 'This is cool', null);
+
+INSERT INTO content
+(content_id, title, body, link)
+VALUES (uuid(), 'The truth about Messi', 'He is the best ever', null);
+
+INSERT INTO content
+(content_id, title, body, link)
+VALUES (uuid(), 'Liverpool [4]-0 Barcelona : Origi 79 (agg. 4-3)', 'What a goal', 'https://streamja.com/bbOB');
+
+INSERT INTO content
+(content_id, title, body, link)
+VALUES (uuid(), 'Proposal to spend 25% of EU budget', null, 'https://www.bbc.co.uk/news/world-europe-48198646');
