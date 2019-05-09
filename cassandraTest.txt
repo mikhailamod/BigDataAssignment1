@@ -54,3 +54,8 @@ VALUES (uuid(), 'Liverpool [4]-0 Barcelona : Origi 79 (agg. 4-3)', 'What a goal'
 INSERT INTO content
 (content_id, title, body, link)
 VALUES (uuid(), 'Proposal to spend 25% of EU budget', null, 'https://www.bbc.co.uk/news/world-europe-48198646');
+
+//insert posts
+INSERT INTO posts 
+(post_id, time, subreddit, username, content_id, upvotes, downvotes, labels)
+VALUES ( uuid(), 1557332315, 'movies', 'noobmaster69', 075b5246-158c-4558-96fe-f4e33149ca6c, 798, 2, ['movies', 'avengers']);
